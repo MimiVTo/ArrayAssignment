@@ -22,18 +22,23 @@ concat(numbers, OtherList);
 // FUNCTIONS -----------------
 
 function push(newNum){
+
     numbers[numbers.length] = newNum;
     console.log(numbers);
+        // Since the index is always -1, the next one will be the number that you pushed
+
 }
 
 function pop(list){
     var riddenNum = list[list.length-1];
     console.log(riddenNum);
+        //Returns the last index
 }
 
 function toString(wordCalled){
     var calledWord = ""+wordCalled;
     console.log(calledWord);
+        //Puts it inside of the string
 }
 
 function join(array, separatorThing){
@@ -42,6 +47,7 @@ function join(array, separatorThing){
 
     for(var i=0; i<array.length-1;i++){
         result += (array[i]+separatorThing+array[i+1]);
+            //Continues onto the next thing and replaces the ", " into whatever the separator is
     }
 
     console.log(result);
@@ -54,10 +60,12 @@ function concat(list1, list2){
 
     for(var i=0; i<list1.length; i++){
         concatList += (list1[i]+" ");
+        //Adds the List1 numbers
     }
 
     for(var i=0; i<list2.length; i++){
         concatList += (list2[i]+" ");
+        //Adds the List2 numbers
     }
   
     console.log(concatList);
