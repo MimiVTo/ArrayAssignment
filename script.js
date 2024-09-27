@@ -30,9 +30,12 @@ function push(newNum){
 }
 
 function pop(list){
+
     var riddenNum = list[list.length-1];
     console.log(riddenNum);
         //Returns the last index
+
+    list.length--;
 }
 
 function toString(wordCalled){
@@ -45,9 +48,15 @@ function join(array, separatorThing){
 
     var result ="";
 
-    for(var i=0; i<array.length-1;i++){
-        result += (array[i]+separatorThing+array[i+1]);
-            //Continues onto the next thing and replaces the ", " into whatever the separator is
+    for(var i=0; i<array.length;i++){
+
+        result+= array[i];
+
+        if (i !== array.length - 1){
+            result += separatorThing;
+                //Continues onto the next thing and replaces the ", " into whatever the separator is
+        }
+            
     }
 
     console.log(result);
