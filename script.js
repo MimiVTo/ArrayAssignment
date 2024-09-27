@@ -25,6 +25,7 @@ function push(newNum){
 
     numbers[numbers.length] = newNum;
     console.log(numbers);
+    return numbers;
         // Since the index is always -1, the next one will be the number that you pushed
 
 }
@@ -33,13 +34,16 @@ function pop(list){
 
     var riddenNum = list[list.length-1];
     console.log(riddenNum);
-        //Returns the last index
+    //Returns the last index
 
     list.length--;
+    //Gets rid of the pushed in number now but it also affects the console log
 }
 
 function toString(wordCalled){
+
     var calledWord = ""+wordCalled;
+        //Puts it in the string
     console.log(calledWord);
         //Puts it inside of the string
 }
