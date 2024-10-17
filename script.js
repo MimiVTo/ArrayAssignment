@@ -14,6 +14,7 @@ pop(numbers);
     //Get rid of the last one of the array--gets rid of 28
 toString(3);
 toString(4);
+
     //Makes the word into a string
 join(numbers, "--");
     //Changes whats inbetween each index
