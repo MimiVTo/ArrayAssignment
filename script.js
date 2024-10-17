@@ -13,6 +13,7 @@ push(28);
 pop(numbers);
     //Get rid of the last one of the array--gets rid of 28
 toString(3);
+toString(4);
     //Makes the word into a string
 join(numbers, "--");
     //Changes whats inbetween each index
@@ -37,7 +38,8 @@ function pop(list){
 }
 
 function toString(wordCalled){
-    var calledWord = ""+wordCalled;
+    var calledWord = ""
+    calledWord += wordCalled;
         //Puts it in the string
     console.log(calledWord);
         //Puts it inside of the string
