@@ -32,7 +32,7 @@ function pop(list){
     var riddenNum = list[list.length-1];
     console.log(riddenNum);
         //Returns the last index
-    list.length--;
+    list.length = list.length-1;
         //Gets rid of the pushed in number now but it also affects the console log
 }
 
